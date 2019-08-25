@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <script src="horoscope.js"></script> -->
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        .timebox{
+            width: 300px;
+            font-size: 1em;
+            background-color: aqua;
+            border: 5px solid gold;
+            margin: 10px auto;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Check your Zodiac Signs</h1> -->
+    <!-- <button type="button" onclick="getMonth()">Start</button>
+    <p id=MonthNumber></p> -->
+
+<h1>What time is it now?</h1>
+<div class="timebox">
+    <h2>Vancouver is</h2>
+    <p id="datedemo"></p>
+</div>
+<div class="timebox">
+    <h2>Japan is</h2>
+    <p id="datedemo2"></p>
+</div>
+
+<script>
+    var d = new Date();
+    document.getElementById("datedemo").innerHTML = d;
+    
+    var Japan = new Date();
+    Japan.setHours(Japan.getHours() + 16);
+    document.getElementById("datedemo2").innerHTML = Japan;
+
+    // Time zone in Tokyo, Japan (GMT+9)
+</script>
+    
+</body>
+</html>
